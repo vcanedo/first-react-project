@@ -8,7 +8,7 @@ function App() {
   const newName = name.toUpperCase();
   const img = "https://image.cachorrogato.com.br/thumb/1200/630/1/imagens/original/imagem858.jpg"
 
-  function sum(a, b) {
+  const sum = (a, b) => {
     return a + b;
   }
 
