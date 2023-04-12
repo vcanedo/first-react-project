@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Person from './components/Person';
 
 
 function App() {
@@ -16,7 +18,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Person
+          img="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg"
+          name="Victor"
+          age="25"
+          profession="Developer"
+        />
+
+        <SayMyName name="Victor" />
+
         <HelloWorld />
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
