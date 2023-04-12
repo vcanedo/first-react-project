@@ -1,11 +1,12 @@
 // show me the basic structure of a react component
 import Phrase from './Phrase';
 
-const HelloWorld = () => {
+const HelloWorld = (props) => {
   return (
     <div>
       <Phrase />
       <h1>Hello World!</h1>
+      <Phrase />
     </div>
   );
 }
