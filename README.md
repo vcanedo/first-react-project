@@ -1,4 +1,4 @@
-# Started testing out react!
+# Started testing out React!
 
 This is just a file for experimenting and mantaining the changes in a GitHub repo.
 
