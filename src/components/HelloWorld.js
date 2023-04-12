@@ -1,9 +1,10 @@
 // show me the basic structure of a react component
-import React from 'react';
+import Phrase from './Phrase';
 
 const HelloWorld = () => {
   return (
     <div>
+      <Phrase />
       <h1>Hello World!</h1>
     </div>
   );

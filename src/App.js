@@ -28,8 +28,10 @@ function App() {
         >
           Learn React
         </a>
-        <img src={img} alt="image dog" width="250px" />
+        <img src={img} alt="dog" width="250px" />
+        {/* make a 5 times do */}
         <p>{sum(1, 2)}</p>
+
         <p>{newName}</p>
       </header>
     </div>
