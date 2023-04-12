@@ -1,3 +1,7 @@
+# Started testing out react!
+
+This is just a file for experimenting and mantaining the changes in a GitHub repo.
+
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
