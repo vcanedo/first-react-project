@@ -18,12 +18,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Person props={{
-          img: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
-          name: "Victor",
-          age: 25,
-          profession: "Developer"
-          }} />
+        <Person
+          img="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg"
+          name="Victor"
+          age="25"
+          profession="Developer"
+        />
 
         <SayMyName name="Victor" />
 
