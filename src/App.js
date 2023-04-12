@@ -2,6 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = "teste";
+  const newName = name.toUpperCase();
+  const img = "https://image.cachorrogato.com.br/thumb/1200/630/1/imagens/original/imagem858.jpg"
+
+  function sum(a, b) {
+    return a + b;
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +25,9 @@ function App() {
         >
           Learn React
         </a>
+        <img src={img} alt="image dog" width="250px" />
+        <p>{sum(1, 2)}</p>
+        <p>{newName}</p>
       </header>
     </div>
   );
