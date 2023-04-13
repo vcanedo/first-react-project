@@ -1,6 +1,10 @@
+import styles from './Phrase.module.css';
+
 const Phrase = () => {
   return (
-    <p>This is a phrase</p>
+    <div className={styles.phraseContainer}>
+      <p className={styles.phraseContent}>This is a phrase</p>
+    </div>
   );
 }
 

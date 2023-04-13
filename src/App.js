@@ -3,7 +3,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Person from './components/Person';
-
+import List from './components/List';
 
 function App() {
   const name = "teste";
@@ -45,6 +45,7 @@ function App() {
         <p>{sum(1, 2)}</p>
 
         <p>{newName}</p>
+        <List />
       </header>
     </div>
   );
