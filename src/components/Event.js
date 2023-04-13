@@ -1,9 +1,9 @@
-const Event = () => {
+const Event = ({ number }) => {
 
   const myEvent = () => {
-    console.log('Event activated!');
+    console.log(`Event activated! ${number}`);
   }
-  
+
   return (
     <div>
       <h1>Click to activate</h1>

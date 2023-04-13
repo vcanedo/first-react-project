@@ -5,6 +5,7 @@ import SayMyName from './components/SayMyName';
 import Person from './components/Person';
 import List from './components/List';
 import Event from './components/Event';
+import Form from './components/Form';
 
 function App() {
   const name = "teste";
@@ -18,7 +19,9 @@ function App() {
   return (
     <div className="App">
       <h1>Testing</h1>
-      <Event />
+      <Event number="1"/>
+      <Event number="2"/>
+      <Form />
     </div>
   );
 }
