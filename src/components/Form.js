@@ -10,7 +10,7 @@ const Form = () => {
       return;
     } else {
       console.log(name);
-      console.log(`${name} is logged in with password ${password}`);
+      console.log(`User: ${name} is logged in with password: ${password}`);
     }
 
   }
