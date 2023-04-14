@@ -1,13 +1,20 @@
+import Button from './event/Button';
+
 const Event = ({ number }) => {
 
   const myEvent = () => {
-    console.log(`Event activated! ${number}`);
+    console.log(`First event activated!`);
+  }
+
+  const secondEvent = () => {
+    console.log(`Second event activated!`);
   }
 
   return (
     <div>
       <h1>Click to activate</h1>
-      <button onClick={myEvent}>Activate!</button>
+      <Button event={myEvent}text="First event" />
+      <Button event={secondEvent}text="Second event" />
     </div>
   );
 }
