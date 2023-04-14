@@ -1,16 +1,22 @@
+import { useState } from 'react';
+
 const Form = () => {
 
   const loginUser = (e) => {
     e.preventDefault();
-    const name = e.target[0].value;
     // if name is empty, alert user to input name otherwise it will send the name to the console
-    if (name === '') {
-      alert('Please input your name');
+    if (name === '' || password === '') {
+      alert('Please input your name and password');
       return;
     } else {
-    console.log(`${name} is logged in`);
+      console.log(name);
+      console.log(`${name} is logged in with password ${password}`);
+    }
+
   }
-  }
+
+  const [name, setName] = useState('Victor');
+  const [password, setPassword] = useState('123');
 
 
   return (
@@ -25,6 +31,8 @@ const Form = () => {
             id="name"
             name="name"
             placeholder="input your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
 
@@ -35,6 +43,8 @@ const Form = () => {
             id="password"
             name="password"
             placeholder="input your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
 
