@@ -6,6 +6,7 @@ import Person from './components/Person';
 import List from './components/List';
 import Event from './components/Event';
 import Form from './components/Form';
+import Conditional from './components/Conditional';
 
 function App() {
   const name = "teste";
@@ -21,6 +22,10 @@ function App() {
       <h1>Testing</h1>
       <Event />
       <Form />
+      <h2>Conditional Rendering</h2>
+
+      <Conditional />
+      
     </div>
   );
 }
