@@ -18,3 +18,7 @@ body {
   background-color: #efefef;
 
 }
+
+h1 {
+  border-top: 1px solid #ccc;
+}

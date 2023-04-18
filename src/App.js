@@ -7,8 +7,9 @@ import List from './components/List';
 import Event from './components/Event';
 import Form from './components/Form';
 import Conditional from './components/Conditional';
+import OtherList from './components/OtherList';
 
-function App() {
+const App= () => {
   const name = "teste";
   const newName = name.toUpperCase();
   const img = "https://image.cachorrogato.com.br/thumb/1200/630/1/imagens/original/imagem858.jpg"
@@ -17,15 +18,24 @@ function App() {
     return a + b;
   }
 
+
+  const myItems = [ 'Item 1', 'Item 2', 'Item 3', 'Item 4' ]
+
   return (
     <div className="App">
+      <h1>List Rendering</h1>
+
+      <OtherList items={myItems} />
+      <OtherList items={[]} />
+
+
       <h1>Testing</h1>
       <Event />
       <Form />
       <h2>Conditional Rendering</h2>
 
       <Conditional />
-      
+
     </div>
   );
 }
