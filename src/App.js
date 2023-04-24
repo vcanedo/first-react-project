@@ -10,8 +10,9 @@ import Conditional from './components/Conditional';
 import OtherList from './components/OtherList';
 import { useState } from 'react';
 import YourName from './components/YourName';
+import Welcome from './components/Welcome';
 
-const App= () => {
+const App = () => {
   const [name, setName] = useState();
   // const newName = name.toUpperCase();
   const img = "https://image.cachorrogato.com.br/thumb/1200/630/1/imagens/original/imagem858.jpg"
@@ -19,7 +20,6 @@ const App= () => {
   const sum = (a, b) => {
     return a + b;
   }
-
 
   const myItems = [ 'Item 1', 'Item 2', 'Item 3', 'Item 4' ]
 
@@ -29,7 +29,9 @@ const App= () => {
 
       <YourName setName={setName} />
       {name}
-      
+
+      <Welcome name={name} />
+
       <h1>List Rendering</h1>
 
       <OtherList items={myItems} />
