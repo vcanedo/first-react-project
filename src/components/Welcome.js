@@ -4,7 +4,7 @@ const Welcome = ({ name }) => {
   }
   return (
     <>
-      <p>{generateWelcome(name)}</p>
+      {name && <p>{generateWelcome(name)}</p>}
     </>
   )
 }
