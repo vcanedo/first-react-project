@@ -1,41 +1,30 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Home from './pages/Home';
 import Company from './pages/Company';
 import Contact from './pages/Contact';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 
 
 const App = () => {
 
   return (
     <Router>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/company">Company</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
+
+      <Navbar />
 
       <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/company">
-          <Company />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
 
+    <Footer />
+
+    </Router>
   );
 }
 
