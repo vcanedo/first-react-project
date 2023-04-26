@@ -5,23 +5,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './pages/Home';
 import Company from './pages/Company';
 import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
 
 
 const App = () => {
 
   return (
     <Router>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/company">Company</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
+      <Navbar />
 
       <Routes>
         <Route exact path="/" element={<Home />} />
